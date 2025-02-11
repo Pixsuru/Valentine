@@ -1,0 +1,94 @@
+/* General Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5em;
+    color: #ff5e78;
+    text-shadow: 2px 2px #fff;
+}
+
+/* Button Styling */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yes {
+    background-color: #ff7eb3;
+    color: white;
+}
+
+.no {
+    background-color: #ffc3a0;
+    color: white;
+    position: absolute;
+}
+
+.yes:hover {
+    background-color: #ff5e78;
+}
+
+/* Cat Gif Wrapper */
+#cat-gif-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #ff7eb3;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#cat-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark Intro */
+#dark-intro {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    font-family: 'Creepster', cursive;
+    font-size: 3em;
+    z-index: 9999;
+}
+
+.ominous-text {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
